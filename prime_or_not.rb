@@ -7,7 +7,7 @@ class PrimeOrNot
     if user_input.prime?
       puts "Yes, the number '#{user_input}' is a prime number"
     else
-      puts "Now, your number '#{user_input}' is not prime"
+      puts "No, your number '#{user_input}' is not prime"
     end
   end
 end
