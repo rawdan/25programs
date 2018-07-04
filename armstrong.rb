@@ -11,7 +11,8 @@ class Armstrong
 
   def is_narcisistic?(user_input)
     all_digits = user_input.to_s.chars.map(&:to_i)
-    raised_to_power = all_digits.map {|a| a ** 3}
+    number_of_digits = all_digits.count
+    raised_to_power = all_digits.map {|a| a ** number_of_digits}
     if raised_to_power.inject(0) {|sum, x| sum + x} == user_input
       puts "your number #{user_input} is a narcisistic number"
     else
