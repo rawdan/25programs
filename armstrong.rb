@@ -1,6 +1,5 @@
 class Armstrong
 
-
   def check_user_number
     puts "Enter any number for check: "
     user_input = gets.chomp.to_i
