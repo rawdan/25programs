@@ -22,7 +22,22 @@ class Calculator
     elsif selection == 5
       "modulus"
     else
-      'error'
+      "error"
     end
   end
+
+  def calculate_answer(operator, a, b)
+    if operator == "add"
+      a + b
+    elsif operator == "subtract"
+      a - b
+    elsif operator == "multiply"
+      a * b
+    elsif operator == "divide"
+      a / b
+    elsif operator == "modulus"
+      a % b
+    end
+  end
+
 end
