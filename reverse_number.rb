@@ -1,7 +1,7 @@
 class ReverseNumber
 
   def reverse_it
-    puts "Enter any character (or more) to convert them to ascii"
+    puts "Enter any number to have it reversed"
     user_input = gets.chomp.to_i
     digits = user_input.to_s.chars.map(&:to_i)
     reversed_digits = digits.reverse
