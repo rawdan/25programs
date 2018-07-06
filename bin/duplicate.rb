@@ -1,6 +1,6 @@
 class Duplicate
 
-  def duplicate
+  def greet_user
     arr = []
     puts "Write a couple of words, repeated or not and I will check for duplicates for you"
     answer = gets.chomp.to_s
@@ -24,4 +24,4 @@ class Duplicate
   end
 end
 
-Duplicate.new.duplicate
+Duplicate.new.greet_user
