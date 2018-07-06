@@ -1,9 +1,12 @@
 class Duplicate
 
   def duplicate
-    arr = ["abc", "def", "ghi", "jkl", "mno","abc", "def"]
-
-    remove_duplicates(arr)
+    arr = []
+    puts "Write a couple of words, repeated or not and I will check for duplicates for you"
+    answer = gets.chomp.to_s
+    elements = answer.split(/\W+/)
+    arr << elements
+    remove_duplicates(arr.flatten)
   end
 
   private
